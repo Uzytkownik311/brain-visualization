@@ -1,7 +1,9 @@
 # compiled files
-*STAR.aux
-*STAR.lbl
-*STAR.log
-*STAR.pdf
-*STAR.synctex.gz
-
+*star.aux
+*star.lbl
+*star.log
+*star.pdf
+*star.synctex.gz
+*star.bbl
+*star.blg
+*star.brf
