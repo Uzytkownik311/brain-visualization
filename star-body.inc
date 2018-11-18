@@ -52,7 +52,7 @@
 %-------------------------------------------------------------------------
 \section{Instructions}
 
-Brain is our most important organ. It is complicated nervous system which controlls most of activities in our body, it receives information from other organs and makes decision for the rest of the body. There is strong hypothesis that structur of this organ defines our  Its function could not be artificially taken over. 
+Brain is our most important organ\cite{Buhmann:1998:DCQ}. It is complicated nervous system which controlls most of activities in our body, it receives information from other organs and makes decision for the rest of the body. There is strong hypothesis that structur of this organ defines our  Its function could not be artificially taken over. 
 
 %-------------------------------------------------------------------------
 \subsection{Section}
@@ -64,9 +64,8 @@ Brain is our most important organ. It is complicated nervous system which contro
 
 
 %-------------------------------------------------------------------------
-\subsection{References}
-
 \bibliographystyle{eg-alpha}
+\bibliography{egbibsample}
 %\bibliographystyle{eg-alpha-doi}
 
 \end{document}
