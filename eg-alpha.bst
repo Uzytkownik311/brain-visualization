@@ -1075,6 +1075,8 @@ MACRO {toois} {"ACM Trans. Office Inf. Syst."}
 MACRO {toplas} {"ACM Trans. Program. Lang. Syst."}
  
 MACRO {tcs} {"Theoretical Comput. Sci."}
+
+MACRO {biolcyb} {"Biological cybernetics. "}
  
 READ
  
