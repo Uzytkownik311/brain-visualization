@@ -45,7 +45,7 @@ Aquisition techniques we could devide focusing on the visualization of point-to-
 \end{itemize}
 Especially interesting are MRI derived techniques like Diffusion MRI nad fMRI. In MRI strong magnetic field is applied over the examined structure. Basicially in these technique we mesure a time which is needed for tisuses to go back to equilibrium state after aplication of an impuls of magnetic field. In the Diffusion MRI we mesure indirectly movment of the water in neurons and we assume that water molecules move more often along the constrainig structures (\textit{anisotropic diffusion}), concluding from that shape of that structures. Most significant diffrenc compering mentioned technique to fMRI is that instead of water we mesure signal BOLD which indicate augmented use of glucose, which is required by active neurons. That information could help us tu identify what is the activation of diffrent parts of the brain. For fMRI we can precise two categoris: when subject is asked to do simple tack (e.g. taping with a finger) simultaneously with examination \textit{task state fMRI (tfMRI)} and when subject is in a relaxed mental state \textit{resting state fMRI (rfMRI)}.
 %-------------------------------------------------------------------------
-\subsection{Human Connectome Project}
+\section{Human Connectome Project}
 As a one of a result of revolution noninvasive neuroimaging method in the last paragraph we are enable the analysis and visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy. Acquired data should also enable comparision between brain circuit, behaviuour, and genetics at the level of individual subject.
 \\
 To achive that aim, particular type of data was collected:
@@ -63,6 +63,8 @@ To achive that aim, particular type of data was collected:
 	\item Also blood samples was acquired at the time of eachsubject's visit. Genotyping will be carried out\cite{releaseNotes}.
 \end{itemize}
 The project phase of acquiring data for visualization is already completed\cite{releaseNotes}.
+Data are freely available to the scientific community in the raw form , but also after the multiple levels of processing needed to analyze and interpret the data. Ta achive aim of creating a database which could be use by vast community of reaserchers around the world the first phase of the project considered i. a. 3T scanning protocol and 7T scanning protocol (to acquire raw data), minimal processing pipelines, analysis approaches, informatics (one platforms for handling the data \textit{ConnectomeDB} and second for visualization and analysis \textit{Connectome Workbench}).
+
 \begin{figure}[htb]
   \centering
   % the following command controls the width of the embedded PS file
@@ -82,8 +84,19 @@ The project phase of acquiring data for visualization is already completed\cite{
            One of the pictures from the gallery of Human Connectome Project.}
 \end{figure}
 
+\subsection{Image reconstruction}
+In that sections we focus on major improvments which was done in the framework of the project. Main advences was made for data comming form dMRI\cite{Sotiropoulos:2013} short overview of this advences will be given focusing on the preprocesing pipeline.
+
+\subsubsection{Image Reconstruction}
+
+\subsubsection{Distortion Correction}
+
+\subsubsection{Fibre Orientation Estimation}
+
+\subsubsection{Tractography}
+
 %-------------------------------------------------------------------------
-\subsection{Responsibilities}
+\section{Responsibilities}
 
 Marcin Konefał worked on:
 \begin{itemize}
@@ -92,7 +105,6 @@ Marcin Konefał worked on:
 \item Section - Human Connectome Project
 \end{itemize}
 
-\pagebreak
 %-------------------------------------------------------------------------
 \bibliography{egbibsample}
 \bibliographystyle{eg-alpha}
