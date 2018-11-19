@@ -101,7 +101,7 @@ Several methods have been proposed for inferring the fibre orientation density f
 The ball \& stick model is powerful parametric deconvolution method, but it is not appropriate for multi-shell datasets. It developed a parametric deconvolution extension of the ball \& stick model, which is suitable for that purpose. It was modified the single-fibre kernel \textbf{R} to represent the signal arising from a distribution of diffusivities within a voxel, rather than a single diffusivity. Using a Gamma distribution of diffusivities allows an analytic parametric expression to be obtained.
 Thanks to this model crossing-fibre sensitivity between single and multi-shell parametric spherical deconvolution was increased.
 \subsubsection{Tractography}
-
+Probabilistic streamline tractography is employed to propagate spatially the local fibre orientation information. Our tractography algorithm has been modified to handle surfaces and volumes as regions of interest. Therefore, extra functionality is supported and handling of surface vertices, such as seeding from the gray/white matter boundary surface or using the pial surface as a termination mask.
 %-------------------------------------------------------------------------
 \section{Responsibilities}
 
