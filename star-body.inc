@@ -1,4 +1,4 @@
-% ---------------------------------------------------------------------
+﻿% ---------------------------------------------------------------------
 \title{Brain Visualization - STAR Report}
 
 % for anonymous conference submission please enter your SUBMISSION ID
@@ -28,43 +28,43 @@
 %-------------------------------------------------------------------------
 \begin{abstract}
 
-Human Connectom Project is one of the most ambitious projects in the history of neuroscience and it is comming to an end. Its aim is to provide knowledge which shed the light on the anatomical and fuctional connectivity of the healthy human brain. It was done by acquiring, processing and distribuating for unseen before scale medical data, which are avaliable right now to the scientific community. It give unprecednet oportunity to researchers from different fields to explore this incredible human organ. In this article we have given short overview to that project.
+Human Connectome Project is one of the most ambitious projects in the history of neuroscience and it is coming to an end. Its aim is to provide knowledge which shed the light on the anatomical and functional connectivity of the healthy human brain. It was done by acquiring, processing and distributing for unseen before scale medical data, which are available right now to the scientific community. It give unprecedented opportunity to researchers from different fields to explore this incredible human organ. In this article we have given short overview to that project.
 
 \end{abstract}
 
 %-------------------------------------------------------------------------
 \section{Introduction}
 
-The brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs i.a. because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). We dispose of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also important to transform acquired data to the form in which it could be analysed or visualized. In this work we consider \textit{macroscale connectivity} of the brain.
+The brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs i. a. because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). We dispose of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also important to transform acquired data to the form in which it could be analysed or visualized. In this work we consider \textit{macroscale connectivity} of the brain.
 \\
 We could distinct three different type of brain connectivity:
 \begin{itemize}
-	\item \textbf{Structural connectivity} - refering to the network of anatomical links
-	\item \textbf{Functional connectivity} - refering to the network formed by the correlation of time-dependent brain activity between different regions of the brain
-	\item \textbf{Effevtive connectivity} - refering to the influance that diffrent brain regions exert on each other
+	\item \textbf{Structural connectivity} - referring to the network of anatomical links
+	\item \textbf{Functional connectivity} - referring to the network formed by the correlation of time-dependent brain activity between different regions of the brain
+	\item \textbf{Effective connectivity} - referring to the influence that different brain regions exert on each other
 \end{itemize}
 
-Aquisition techniques we could divide according to which types of brain connectivity they could discover. We distinguish aquisition techniques for structural connectivity and visualization techniques for connectivity matrices (functional and effective connectivity information could can be represented as a matrix). The techniques for the groups are following:
+Acquisition techniques we could divide according to which types of brain connectivity they could discover. We distinguish acquisition techniques for structural connectivity and visualization techniques for connectivity matrices (functional and effective connectivity information could can be represented as a matrix). The techniques for the groups are following:
 \begin{itemize}
 	\item \textbf{structural} - Diffusion MRI;
 	\item \textbf{connectivity matrices} - EEG, MEG, fMRI, Diffusion MRIs
 \end{itemize}
 
 %-------------------------------------------------------------------------
-\subsection{Aquisition of connectivity data}
+\subsection{Acquisition of connectivity data}
 
-In MRI strong magnetic field is applied over the examined structure\cite{PREIM2014541}. Basically, in this technique we measure a time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates a MRI signal (or aquisition mode), one type of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI (dMRI) and Functional MRI (fMRI).
+In MRI strong magnetic field is applied over the examined structure\cite{PREIM2014541}. Basically, in this technique we measure a time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates a MRI signal (or acquisition mode), one type of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI (dMRI) and Functional MRI (fMRI).
 \\
 In the dMRI we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), from this fact shape of that structures could be concluded.
 \\
 Most significant difference between dMRI and fMRI is that in fMRI instead of the water we measure a signal BOLD which indicate use of the glucose, which is required by active neurons. This information could help us identify to what extend particular parts of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) during the fMRI examination then we call it task state fMRI (tfMRI) and when subject is in a relaxed mental state during examination - resting state fMRI (rfMRI).
 \\
-Electroencephalography (EEG) and magnetoencephalography (MEG) are based on mesuring difference in voltage and localized magnetic field respectively. However, use of these techniques decreased due to limited spatial resolution comparing with MRI-based techniques.
+Electroencephalography (EEG) and magnetoencephalography (MEG) are based on measuring difference in voltage and localized magnetic field respectively. However, use of these techniques decreased due to limited spatial resolution comparing with MRI-based techniques.
 
 %-------------------------------------------------------------------------
 \section{Human Connectome Project}
 
-As a one of a result of the revolution in the noninvasive neuroimaging methods we are enable the analysis and the visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University, and the other led by MGH and UCLA. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy adults. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
+As a one of a result of the revolution in the non-invasive neuroimaging methods we are enable the analysis and the visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University, and the other led by MGH and UCLA. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy adults. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
 \\
 To achieve that aim, particular type of data was collected:
 \begin{itemize}
@@ -121,37 +121,34 @@ Data are freely available to the scientific community in the raw form, but also 
 In order to make best use of the high-resolution HCP datasets, it is critical to compensate as much as possible distortions, biases, and artifacts and also to acknowledge the potential impact of residual confounds\cite{Essen:2013}. During the first two years of the HCP, intensive efforts were put into optimizing a set of preprocessing steps. Results provide improvement for all MRI modalities. For fMRI, one set of issues revolves around de-noising, and removal of motion confounds. Another involves brain parcellation and network analysis. For dMRI, key issues involve fiber orientation estimation followed by probabilistic tractography. In the next section we look closer to these which were applied to dMRI. Three mayor software packages used by the HCP pipelines are FSLNets, FreeSurfer, and Connectome Workbench. 
 
 %-------------------------------------------------------------------------
-\subsection{Improvments for dMRI}
-In that sections we focus on major improvements which was done in the framework of the project. Main advances was made for data coming from dMRI\cite{Sotiropoulos:2013}.
-\\
-Tractography algorithms was used for structural connectivity analysis, which can successfully localize fibre bundles within white matter and therefore allows the study of specific brain pathways. This approach have some limitation, we will try to give short overview researches in the HCP overcome this limitations.
+\subsection{Improvements for dMRI}
+For structural connectivity analysis, in particular, diffusion MRI (dMRI) tractography algorithms was used for structural connectivity analysis, it can successfully localize fibre bundles within white matter and therefore allows the study of specific brain pathways\cite{Sotiropoulos:2013}. This approach have some limitation and we will try to give short overview how researches in the HCP overcomed this limitations.
 %-------------------------------------------------------------------------
 
 \subsubsection{Image Reconstruction}
+
 Images are obtained from reconstruction combining information from different receivers. It could strongly affected fibre orientation estimation and subsequently bias tractography results, because of Rician properties and noise. This effects increase with the number of receiver channels. To reduce effect of the noise (especially noise floor) the number of channels (in this case 32) was minimized using a sensitivity encoding (SENSE). This encoding combines data from all channels into a single complex image, whose magnitude is subsequently computed. It therefore preserves the Rician properties and increases the dynamic range of the signal.
 
 \subsubsection{Distortion Correction}
-Even small inhomogeneities of the magnetic field create distortions in EPI images (created from EPI signals). Inhomogeneities could be caused by different factors, like by object itself, other reason could be rapid switching of the diffusion gradients (gradients in MRI are used to localize position in space volum of the subject which is currently analysed by scanner).
+Even small inhomogeneities of the magnetic field create distortions in EPI images (created from EPI signals). Inhomogeneities could be caused by different factors, like by object itself, other reason could be rapid switching of the diffusion gradients (gradients in MRI are used to localize position in space volume of the subject which is currently analysed by scanner).
 \\
-It was developed a model-based approach that simultaneously considers and corrects for all types of distortions. The distortion correction is based on the idea of manipulating the acquisitions so that a given field inhomogeneity manifests itself differently in different images. Then it could be used generetive model about what images should for every point in space and diffrent distortions. Inversion of this model enables accurate estimation of the corrected data. Combining pairs of images, a suscebility induced off-resonance field can be estimated. For distortions coused by rapid switching gradient, itis analyse complementary information in dMRI scans with opposing diffusion gradient. These and other predictions could be combined and create a model of distorded data. We could correct measurments comparing it to mentioned model in an iterative, active process.
+It was developed a model-based approach that simultaneously considers and corrects all types of distortions. The distortion correction is based on the idea of manipulating the acquisitions so that a given field inhomogeneity manifests itself differently in different images. Then it could be used for creating generative model to make predictions about how dMRI volumes should look like for every point in space and for different distortions. Inversion of this model enables accurate estimation of the corrected data. Combining pairs of images, a susceptibility induced off-resonance field can be estimated. For distortions caused by rapid switching gradient, it is analysed complementary information in dMRI scans with opposing diffusion gradient. These and other predictions could be combined and create a model of distorted data. We could correct measurements comparing it to mentioned model in an iterative, active process.
 
 %-------------------------------------------------------------------------
 
 \subsubsection{Fibre Orientation Estimation}
 Several methods have been proposed for inferring the fibre orientation density function (fODF) from diffusion MRI, targeting either the fODF directly or approximations of it. The underlying idea for the former group of methods is that the measured signal \textbf{S} can be considered as the spherical convolution of the fODF \textbf{F} and an impulse response function \textbf{R}. Then to estimate \textbf{F} we deal with deconvolution function.
 \\\
-The ball \& stick model is powerful parametric deconvolution method, but it is not appropriate for multi-shell datasets. Consequently, it was developed a parametric deconvolution extension of the ball \& stick model, which is do not have this disadventage. The single-fibre kernel \textbf{R} was modified to represent the signal arising from a distribution of diffusivities within a voxel, rather than a single diffusivity. Using a Gamma distribution of diffusivities allows an analytic parametric expression to be obtained. It is also a phenomenological model that can capture effects from multiple diffusion compartments and/or partaial volume in a more flexible way than the simpler stick kernel. Thanks to this model crossing-fibre sensitivity was increased.
+The ball \& stick model is powerful parametric deconvolution method, but it is not appropriate for multi-shell datasets. Consequently, it was developed a parametric deconvolution extension of the ball \& stick model, which do not have this disadvantage. The single-fibre kernel \textbf{R} was modified to represent the signal arising from a distribution of diffusivities within a voxel, rather than a single diffusivity. Using a Gamma distribution of diffusivities allows an analytic parametric expression to be obtained. It is also a phenomenological model that can capture effects from multiple diffusion compartments and/or partial volume in a more flexible way than the simpler stick kernel. Thanks to this model crossing-fibre sensitivity was increased.
 \subsubsection{Tractography}
 Probabilistic streamline tractography is employed to propagate spatially the local fibre orientation information. Tractography algorithm has been modified to handle surfaces and volumes as regions of interest. Therefore, extra functionality is supported and handling of surface vertices, such as seeding from the grey/white matter boundary surface or using the pial surface as a termination mask.
-\\
-It was not decided at the fist phase which strategy should be used for represent structural connectivity matices, we do not find which was finally choosen.
 %-------------------------------------------------------------------------
 
 \section{Responsibilities}
 
 M. Konefał worked on:
 \begin{itemize}
-\item Preperation of latex file
+\item Preparation of latex file
 \item Abstract
 \item Introduction
 \item Human Connectome Project
