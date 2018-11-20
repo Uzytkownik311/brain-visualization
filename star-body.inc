@@ -28,6 +28,7 @@
 
 \begin{abstract}
 
+Human Connectom Project is one of the most ambitious projects in the history of neuroscience and it is comming to an end. Its aim is to provide knowledge which shed the light on the anatomical and fuctional connectivity of the healthy human brain. It was done by acquiring, processing and distribuating for unseen before scale of medical data, which right now is avaliable to te scientific community. It give unprecednet oportunity to researchers from different fields to explore this incredible human organ. In this article we give short project overview, focusing more on improvments which have been done in preprocessing dfMIR data.
 
 \end{abstract}
 
@@ -36,16 +37,19 @@
 %-------------------------------------------------------------------------
 \section{Introduction}
 
-Brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs inter alia because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). Couple of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also very important how we decide visualise it.
+Brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs i.a. because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). We dispose of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also important to transform acquired data to the form in which it could be analysed or visualize.
 \\
 Aquisition techniques we could divide focusing on the visualization of point-to-point brain connectivity to following categories\cite{PREIM2014541}:
 \begin{itemize}
 \item structural - using Diffusion MRI;
 \item connectivity matrices - using EEG, MEG, fMRI, Diffusion MRIs
 \end{itemize}
-Especially interesting are MRI derived techniques like Diffusion MRI and fMRI. In MRI strong magnetic field is applied over the examined structure. Basically in these technique we measure a time which is needed for tissues to go back to equilibrium state after application of an impulse of magnetic field. To achieve that we send sequence of impulses which creates MRI signal, one of them is Echo-Planar Imaging (EPI).
+Especially interesting are MRI derived techniques like Diffusion MRI and fMRI. In MRI strong magnetic field is applied over the examined structure. Basically in these technique we measure a time which is needed for tissues to go back to equilibrium state after application of an impulse of the magnetic field. To achieve that we send sequence of impulses which creates MRI signal, one of them is Echo-Planar Imaging (EPI).
 \\
-In the Diffusion MRI we measure indirectly movement of the water in neurons and we assume that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), concluding from that shape of that structures. Most significant difference comparing mentioned technique to fMRI is that instead of water we measure signal BOLD which indicate augmented use of glucose, which is required by active neurons. That information could help us tu identify what is the activation of different parts of the brain. For fMRI we can precise two categories: when subject is asked to do simple tack (e.g. taping with a finger) simultaneously with examination \textit{task state fMRI (tfMRI)} and when subject is in a relaxed mental state \textit{resting state fMRI (rfMRI)}.
+In the Diffusion MRI we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), form that fact shape of that structures could be concluded.
+\\
+Most significant difference comparing mentioned technique to fMRI is that instead of water we measure signal BOLD which indicate use of the glucose, which is required by active neurons. That information could help us tu identify to what extend particular part of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) simultaneously with fMRI examination \textit{task state fMRI (tfMRI)} and when subject is in a relaxed mental state \textit{resting state fMRI (rfMRI)}.
+
 %-------------------------------------------------------------------------
 
 \section{Human Connectome Project}
