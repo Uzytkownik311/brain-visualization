@@ -1,4 +1,4 @@
-﻿% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
 \title{Brain Connectivity Visualization - STAR}
 
 % for anonymous conference submission please enter your SUBMISSION ID
@@ -185,9 +185,6 @@ In \ref{fig:connectivity} the individual functional brain regions are fitted on 
     }
 \end{figure}
 
-\\
-\\
-\\
 \section{Responsibilities}
 
 M. Konefał worked on:

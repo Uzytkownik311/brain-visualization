@@ -968,8 +968,7 @@ Eurographics Proceedings \copyright\ #1\ The Eurographics Association.
 \end{flushright}
 }%
 
-\newcommand\p@journalSubmissionText[1]{%
-submitted to COMPUTER GRAPHICS \textit{Forum} #1.%
+\newcommand\p@journalSubmissionText[1]{
 }%
 
 \newcommand\p@confSubmissionText[1]{%
@@ -1142,8 +1141,8 @@ submitted to \textit{#1}%
 \def\ps@titlepage{\let\@mkboth\@gobbletwo
  \def\@oddhead{\raisebox{\z@}[8pt][1pt]{\parbox{\textwidth}{\small
 %    \textit{Volume \j@volume} (\textit{\number\year}\/),
-   \textit{Volume xx} (\textit{200y}\/),         % Vol + year yet unknown !
-   \textit{Number z, \ pp.\ \j@pStartPage--\j@pEndPage}%
+   \textit{}         % Vol + year yet unknown !
+   \textit{}%
    \hfill
  }}}%
 %
