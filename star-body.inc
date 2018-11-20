@@ -60,9 +60,6 @@ In the Diffusion MRI (dMRI) we measure indirectly movement of the water in neuro
 Most significant difference between dMRI and fMRI is that instead of water we measure signal BOLD which indicate use of the glucose, which is required by active neurons. That information could help us tu identify to what extend particular part of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) during the fMRI examination task state fMRI (tfMRI) and when subject is in a relaxed mental state resting state fMRI (rfMRI).
 \\
 Electroencephalography (EEG) and magnetoencephalography (MEG) are based on mesuring difference in voltage and localized magnetic field respectively. However, use of these techniques decreased due to limited spatial resolution comparing with MRI-based techniques.
-%-------------------------------------------------------------------------
-\section{Human Connectome Project}
-
 
 %-------------------------------------------------------------------------
 \section{Human Connectome Project}
@@ -97,15 +94,34 @@ Data are freely available to the scientific community in the raw form , but also
   % the bounding box (i.e., it will speed up the compilation process)
   % \includegraphics[width=.95\linewidth, bb=39 696 126 756]{sampleFig}
   %
-  \parbox[t]{1.0\columnwidth}{\relax
-           White matter fiber architecture from the Connectome Scanner dataset. The fibers are color-coded by direction: red = left-right, green = anterior-posterior, blue = ascending-descending (RGB=XYZ)\cite{eHCP}.
-           }
   %
-  \caption{\label{fig:connectome}
-           One of the pictures from the gallery of Human Connectome Project.}
+    \caption{\label{fig:connectome}
+	White matter fiber architecture from the Connectome Scanner dataset. The fibers are color-coded by direction: red = left-right, green = anterior-posterior, blue = ascending-descending (RGB=XYZ)\cite{eHCP}.    
+    }
 \end{figure}
 
-\subsection{Aspects of the Preprocessing Pipeline}
+\begin{figure}[htb]
+  \centering
+  % the following command controls the width of the embedded PS file
+  % (relative to the width of the current column)
+  \includegraphics[width=.8\linewidth]{FunctionalConnectivity_rfMRI}
+  % replacing the above command with the one below will explicitly set
+  % the bounding box of the PS figure to the rectangle (xl,yl),(xh,yh).
+  % It will also prevent LaTeX from reading the PS file to determine
+  % the bounding box (i.e., it will speed up the compilation process)
+  % \includegraphics[width=.95\linewidth, bb=39 696 126 756]{sampleFig}
+  %
+    \caption{\label{fig:connectome_rs}
+           A map of the average \textit{functional connectivity} in the human cerebral cortex collected on healthy subjects while at rest in the MRI scanner. Regions in yellow/red are functionally connected to the \textit{seed} location in the right frontal cortex (center of yellow area in upper right), whereas regions in green and blue are weakly connected or not connected at all.)\cite{rseHCP}.
+    }
+\end{figure}
+%-------------------------------------------------------------------------
+
+\subsection{Data Processing}
+In order to make best use of the high-resolution HCP datasets, it is critical to compensate as much as possible for distortions, biases, and artifacts, and also to acknowledge the potential impact of residual confounds. During the first two years of the HCP, intensive efforts were put into optimizing a set of preprocessing steps. Results provide improvement for all MRI modalities, in the next section we look closer to these which were applied to dMRI.
+
+%-------------------------------------------------------------------------
+\subsection{Major improvments for dMRI}
 In that sections we focus on major improvements which was done in the framework of the project. Main advances was made for data coming from dMRI\cite{Sotiropoulos:2013}.
 \\
 Tractography algorithms was used for structural connectivity analysis, which can successfully localize fibre bundles within white matter and therefore allows the study of specific brain pathways. This approach have some limitation, we will try to give short overview researches in the HCP overcome this limitations.
