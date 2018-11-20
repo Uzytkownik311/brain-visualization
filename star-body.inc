@@ -28,7 +28,7 @@
 %-------------------------------------------------------------------------
 \begin{abstract}
 
-Human Connectom Project is one of the most ambitious projects in the history of neuroscience and it is comming to an end. Its aim is to provide knowledge which shed the light on the anatomical and fuctional connectivity of the healthy human brain. It was done by acquiring, processing and distribuating for unseen before scale of medical data, which right now is avaliable to te scientific community. It give unprecednet oportunity to researchers from different fields to explore this incredible human organ. In this article we give short project overview, focusing more on improvments which have been done in preprocessing dfMIR data.
+Human Connectom Project is one of the most ambitious projects in the history of neuroscience and it is comming to an end. Its aim is to provide knowledge which shed the light on the anatomical and fuctional connectivity of the healthy human brain. It was done by acquiring, processing and distribuating for unseen before scale medical data, which are avaliable right now to the scientific community. It give unprecednet oportunity to researchers from different fields to explore this incredible human organ. In this article we have given short overview to that project.
 
 \end{abstract}
 
@@ -44,7 +44,7 @@ We could distinct three different type of brain connectivity:
 	\item \textbf{Effevtive connectivity} - refering to the influance that diffrent brain regions exert on each other
 \end{itemize}
 
-Aquisition techniques we could divide according to which types of brain connectivity they could discover. We distinguish aquisition techniques for for structural connectivity and visualization techniques for connectivity matrices (functional and effective connectivity information could can be represented as a matrix). The techniques for the groups are following:
+Aquisition techniques we could divide according to which types of brain connectivity they could discover. We distinguish aquisition techniques for structural connectivity and visualization techniques for connectivity matrices (functional and effective connectivity information could can be represented as a matrix). The techniques for the groups are following:
 \begin{itemize}
 	\item \textbf{structural} - Diffusion MRI;
 	\item \textbf{connectivity matrices} - EEG, MEG, fMRI, Diffusion MRIs
@@ -53,18 +53,18 @@ Aquisition techniques we could divide according to which types of brain connecti
 %-------------------------------------------------------------------------
 \subsection{Aquisition of connectivity data}
 
-In MRI strong magnetic field is applied over the examined structure. Basically in these technique we measure a time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates MRI a signal (or aquisition mode), one of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI and fMRI.
+In MRI strong magnetic field is applied over the examined structure\cite{PREIM2014541}. Basically, in this technique we measure a time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates a MRI signal (or aquisition mode), one type of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI (dMRI) and Functional MRI (fMRI).
 \\
-In the Diffusion MRI (dMRI) we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), from that fact shape of that structures could be concluded.
+In the dMRI we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), from this fact shape of that structures could be concluded.
 \\
-Most significant difference between dMRI and fMRI is that instead of water we measure signal BOLD which indicate use of the glucose, which is required by active neurons. That information could help us tu identify to what extend particular part of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) during the fMRI examination task state fMRI (tfMRI) and when subject is in a relaxed mental state resting state fMRI (rfMRI).
+Most significant difference between dMRI and fMRI is that in fMRI instead of the water we measure a signal BOLD which indicate use of the glucose, which is required by active neurons. This information could help us identify to what extend particular parts of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) during the fMRI examination then we call it task state fMRI (tfMRI) and when subject is in a relaxed mental state during examination - resting state fMRI (rfMRI).
 \\
 Electroencephalography (EEG) and magnetoencephalography (MEG) are based on mesuring difference in voltage and localized magnetic field respectively. However, use of these techniques decreased due to limited spatial resolution comparing with MRI-based techniques.
 
 %-------------------------------------------------------------------------
 \section{Human Connectome Project}
 
-As a one of a result of a revolution in the noninvasive neuroimaging methods we are enable the analysis and visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
+As a one of a result of the revolution in the noninvasive neuroimaging methods we are enable the analysis and the visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University, and the other led by MGH and UCLA. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy adults. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
 \\
 To achieve that aim, particular type of data was collected:
 \begin{itemize}
@@ -81,7 +81,7 @@ To achieve that aim, particular type of data was collected:
 	\item Also blood samples was acquired at the time of each subject's visit. Genotyping will be carried out\cite{releaseNotes}.
 \end{itemize}
 The project phase of acquiring data for visualization is already completed\cite{releaseNotes}.
-Data are freely available to the scientific community in the raw form , but also after the multiple levels of processing needed to analyse and interpret the data. Ta achieve aim of creating a database which could be use by vast community of researchers around the world the first phase of the project considered i. a. 3T scanning protocol and 7T scanning protocol (to acquire raw data), minimal processing pipelines, analysis approaches, informatics (one platforms for handling the data \textit{ConnectomeDB} and second for visualization and analysis \textit{Connectome Workbench}).
+Data are freely available to the scientific community in the raw form, but also after the multiple levels of processing needed to analyse and interpret the data. Ta achieve aim of creating a database which could be use by vast community of researchers around the world the first phase of the project considered i. a. creation of: 3T scanning protocol and 7T scanning protocol (to acquire raw data), minimal processing pipelines, analysis approaches, informatics (one platforms for handling the data \textit{ConnectomeDB} and second for visualization and analysis \textit{Connectome Workbench}). Examples of images provided by this project we could see at figures  \ref{fig:connectome} and \ref{fig:connectome_rs}.
 
 \begin{figure}[htb]
   \centering
@@ -118,10 +118,10 @@ Data are freely available to the scientific community in the raw form , but also
 %-------------------------------------------------------------------------
 
 \subsection{Data Processing}
-In order to make best use of the high-resolution HCP datasets, it is critical to compensate as much as possible for distortions, biases, and artifacts, and also to acknowledge the potential impact of residual confounds. During the first two years of the HCP, intensive efforts were put into optimizing a set of preprocessing steps. Results provide improvement for all MRI modalities, in the next section we look closer to these which were applied to dMRI.
+In order to make best use of the high-resolution HCP datasets, it is critical to compensate as much as possible distortions, biases, and artifacts and also to acknowledge the potential impact of residual confounds\cite{Essen:2013}. During the first two years of the HCP, intensive efforts were put into optimizing a set of preprocessing steps. Results provide improvement for all MRI modalities. For fMRI, one set of issues revolves around de-noising, and removal of motion confounds. Another involves brain parcellation and network analysis. For dMRI, key issues involve fiber orientation estimation followed by probabilistic tractography. In the next section we look closer to these which were applied to dMRI. Three mayor software packages used by the HCP pipelines are FSLNets, FreeSurfer, and Connectome Workbench. 
 
 %-------------------------------------------------------------------------
-\subsection{Major improvments for dMRI}
+\subsection{Improvments for dMRI}
 In that sections we focus on major improvements which was done in the framework of the project. Main advances was made for data coming from dMRI\cite{Sotiropoulos:2013}.
 \\
 Tractography algorithms was used for structural connectivity analysis, which can successfully localize fibre bundles within white matter and therefore allows the study of specific brain pathways. This approach have some limitation, we will try to give short overview researches in the HCP overcome this limitations.
