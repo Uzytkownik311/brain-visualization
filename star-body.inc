@@ -23,37 +23,51 @@
 
 \begin{document}
 
-
 \maketitle
 
+%-------------------------------------------------------------------------
 \begin{abstract}
 
 Human Connectom Project is one of the most ambitious projects in the history of neuroscience and it is comming to an end. Its aim is to provide knowledge which shed the light on the anatomical and fuctional connectivity of the healthy human brain. It was done by acquiring, processing and distribuating for unseen before scale of medical data, which right now is avaliable to te scientific community. It give unprecednet oportunity to researchers from different fields to explore this incredible human organ. In this article we give short project overview, focusing more on improvments which have been done in preprocessing dfMIR data.
 
 \end{abstract}
 
-
-
 %-------------------------------------------------------------------------
 \section{Introduction}
 
-Brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs i.a. because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). We dispose of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also important to transform acquired data to the form in which it could be analysed or visualize.
+The brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs i.a. because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). We dispose of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also important to transform acquired data to the form in which it could be analysed or visualized. In this work we consider \textit{macroscale connectivity} of the brain.
 \\
-Aquisition techniques we could divide focusing on the visualization of point-to-point brain connectivity to following categories\cite{PREIM2014541}:
+We could distinct three different type of brain connectivity:
 \begin{itemize}
-\item structural - using Diffusion MRI;
-\item connectivity matrices - using EEG, MEG, fMRI, Diffusion MRIs
+	\item \textbf{Structural connectivity} - refering to the network of anatomical links
+	\item \textbf{Functional connectivity} - refering to the network formed by the correlation of time-dependent brain activity between different regions of the brain
+	\item \textbf{Effevtive connectivity} - refering to the influance that diffrent brain regions exert on each other
 \end{itemize}
-Especially interesting are MRI derived techniques like Diffusion MRI and fMRI. In MRI strong magnetic field is applied over the examined structure. Basically in these technique we measure a time which is needed for tissues to go back to equilibrium state after application of an impulse of the magnetic field. To achieve that we send sequence of impulses which creates MRI signal, one of them is Echo-Planar Imaging (EPI).
-\\
-In the Diffusion MRI we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), form that fact shape of that structures could be concluded.
-\\
-Most significant difference comparing mentioned technique to fMRI is that instead of water we measure signal BOLD which indicate use of the glucose, which is required by active neurons. That information could help us tu identify to what extend particular part of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) simultaneously with fMRI examination \textit{task state fMRI (tfMRI)} and when subject is in a relaxed mental state \textit{resting state fMRI (rfMRI)}.
+
+Aquisition techniques we could divide according to which types of brain connectivity they could discover. We distinguish aquisition techniques for for structural connectivity and visualization techniques for connectivity matrices (functional and effective connectivity information could can be represented as a matrix). The techniques for the groups are following:
+\begin{itemize}
+	\item \textbf{structural} - Diffusion MRI;
+	\item \textbf{connectivity matrices} - EEG, MEG, fMRI, Diffusion MRIs
+\end{itemize}
 
 %-------------------------------------------------------------------------
+\subsection{Aquisition of connectivity data}
 
+In MRI strong magnetic field is applied over the examined structure. Basically in these technique we measure a time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates MRI a signal (or aquisition mode), one of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI and fMRI.
+\\
+In the Diffusion MRI (dMRI) we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), from that fact shape of that structures could be concluded.
+\\
+Most significant difference between dMRI and fMRI is that instead of water we measure signal BOLD which indicate use of the glucose, which is required by active neurons. That information could help us tu identify to what extend particular part of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) during the fMRI examination task state fMRI (tfMRI) and when subject is in a relaxed mental state resting state fMRI (rfMRI).
+\\
+Electroencephalography (EEG) and magnetoencephalography (MEG) are based on mesuring difference in voltage and localized magnetic field respectively. However, use of these techniques decreased due to limited spatial resolution comparing with MRI-based techniques.
+%-------------------------------------------------------------------------
 \section{Human Connectome Project}
-As a one of a result of revolution noninvasive neuroimaging method in the last paragraph we are enable the analysis and visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
+
+
+%-------------------------------------------------------------------------
+\section{Human Connectome Project}
+
+As a one of a result of a revolution in the noninvasive neuroimaging methods we are enable the analysis and visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
 \\
 To achieve that aim, particular type of data was collected:
 \begin{itemize}
@@ -122,9 +136,9 @@ It was not decided at the fist phase which strategy should be used for represent
 M. Konefał worked on:
 \begin{itemize}
 \item Preperation of latex file
-\item Section - Introduction
-\item Section - Human Connectome Project
-\item Section
+\item Abstract
+\item Introduction
+\item Human Connectome Project
 \end{itemize}
 
 M. Wiedhalm worked on:
