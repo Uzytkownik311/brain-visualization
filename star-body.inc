@@ -1,4 +1,4 @@
-﻿% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
 \title{Brain Visualization - STAR Report}
 
 % for anonymous conference submission please enter your SUBMISSION ID
@@ -148,15 +148,10 @@ Probabilistic streamline tractography is employed to propagate spatially the loc
 
 M. Konefał worked on:
 \begin{itemize}
-\item Preparation of latex file
-\item Abstract
-\item Introduction
-\item Human Connectome Project
-\end{itemize}
-
-M. Wiedhalm worked on:
-\begin{itemize}
-\item
+\item Preparation of latex file,
+\item Abstract,
+\item Introduction,
+\item Human Connectome Project.
 \end{itemize}
 
 %-------------------------------------------------------------------------
