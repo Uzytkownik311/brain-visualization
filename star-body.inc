@@ -1,5 +1,5 @@
-% ---------------------------------------------------------------------
-\title{Brain Visualization - STAR Report}
+﻿% ---------------------------------------------------------------------
+\title{Brain Connectivity Visualization - STAR}
 
 % for anonymous conference submission please enter your SUBMISSION ID
 % instead of the author's name (and leave the affiliation blank) !!
@@ -26,22 +26,16 @@
 \maketitle
 
 %-------------------------------------------------------------------------
-\begin{abstract}
-
-Human Connectome Project is one of the most ambitious projects in the history of neuroscience and it is coming to an end. Its aim is to provide knowledge which shed the light on the anatomical and functional connectivity of the healthy human brain. It was done by acquiring, processing and distributing for unseen before scale medical data, which are available right now to the scientific community. It give unprecedented opportunity to researchers from different fields to explore this incredible human organ. In this article we have given short overview to that project.
-
-\end{abstract}
-
-%-------------------------------------------------------------------------
 \section{Introduction}
+The brain is the most complex organ in the human body. It consists of approximately $10^{11}$ neurons and $10^{15}$ connections between them, which form a big network \cite{Murre-Sturdy95}.
+This high complexity is one of the reasons why the inner workings are still poorly understood compared to other parts of the human body.
+To gain new insights it is important to understand the structure and thus the many connections inside. This is where a lot of projects have emerged in recent times that provide massive amounts of raw data on the human brain, notably among others the Human Connectome Project.
 
-The brain is our most important organ\cite{Murre-Sturdy95}. It is complicated nervous system which controls most of activities in our body and play key part in human cognition. This organ could not be replaced and its function could not be artificially taken over, consequently any damage or serious pathology change could put at risk whole organism\cite{PREIM2014541}. In the same time it is one of the least know organs i. a. because of it complicity (network consist approximately $10^{11}$ neurons and $10^{15}$ connections between of them\cite{Murre-Sturdy95}). We dispose of acquisition techniques which help as to explore \textit{in vivo} this wonder of nature, but with such quantity of data it is also important to transform acquired data to the form in which it could be analysed or visualized. In this work we consider \textit{macroscale connectivity} of the brain.
-\\
-We could distinct three different type of brain connectivity:
+We differentiate three different type of brain connectivity:
 \begin{itemize}
 	\item \textbf{Structural connectivity} - referring to the network of anatomical links
 	\item \textbf{Functional connectivity} - referring to the network formed by the correlation of time-dependent brain activity between different regions of the brain
-	\item \textbf{Effective connectivity} - referring to the influence that different brain regions exert on each other
+	\item \textbf{Effective/Connectional connectivity} - referring to the influence that different brain regions exert on each other
 \end{itemize}
 
 Acquisition techniques we could divide according to which types of brain connectivity they could discover. We distinguish acquisition techniques for structural connectivity and visualization techniques for connectivity matrices (functional and effective connectivity information could can be represented as a matrix). The techniques for the groups are following:
@@ -50,23 +44,27 @@ Acquisition techniques we could divide according to which types of brain connect
 	\item \textbf{connectivity matrices} - EEG, MEG, fMRI, Diffusion MRIs
 \end{itemize}
 
+The connectivity map first has to be extracted or aproximated from the raw data to get a connectivity matrix / graph. When this comprises the total connections of the brain this is called connectome.
+Unfortunately these graphs have a very high dimensionality and thus visualization is a challange. In the following we provide a quick overview of the current techniques that are available to visualize brain connectivity.
+\\
+
 %-------------------------------------------------------------------------
 \subsection{Acquisition of connectivity data}
 
-In MRI strong magnetic field is applied over the examined structure\cite{PREIM2014541}. Basically, in this technique we measure a time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates a MRI signal (or acquisition mode), one type of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI (dMRI) and Functional MRI (fMRI).
+Inside an MRI a strong magnetic field is applied over the examined structure\cite{PREIM2014541}. Basically, using this technique we measure the time which is needed for tissues to go back to an equilibrium state after application of an impulse of the magnetic field. To achieve that we send a sequence of impulses which creates a MRI signal (or acquisition mode), one type of them is Echo-Planar Imaging (EPI). Especially interesting are MRI-derived techniques like Diffusion MRI (dMRI) and Functional MRI (fMRI).
 \\
-In the dMRI we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), from this fact shape of that structures could be concluded.
+In the dMRI we measure indirectly movement of the water in neurons, keeping in mind that water molecules move more often along the constraining structures (\textit{anisotropic diffusion}), from this the shape of the structures can be concluded.
 \\
-Most significant difference between dMRI and fMRI is that in fMRI instead of the water we measure a signal BOLD which indicate use of the glucose, which is required by active neurons. This information could help us identify to what extend particular parts of the brain are activated. For fMRI we can precise two subcategories: when subject is asked to do simple task (e.g. taping with a finger) during the fMRI examination then we call it task state fMRI (tfMRI) and when subject is in a relaxed mental state during examination - resting state fMRI (rfMRI).
+Most significant difference between dMRI and fMRI is that in fMRI instead of the water we measure a signal BOLD which indicate the use of glucose, which is required by active neurons. This information can help us identify to what extend particular parts of the brain are activated. For fMRI we can define two subcategories: when a test subject is asked to do simple task (e.g. tapping with a finger) during the fMRI examination then we call it task state fMRI (tfMRI) and when the subject is in a relaxed mental state during examination - resting state fMRI (rfMRI).
 \\
-Electroencephalography (EEG) and magnetoencephalography (MEG) are based on measuring difference in voltage and localized magnetic field respectively. However, use of these techniques decreased due to limited spatial resolution comparing with MRI-based techniques.
+Electroencephalography (EEG) and magnetoencephalography (MEG) are based on measuring difference in voltage and localized magnetic field respectively. However, these techniques have a limited spatial resolution compared to MRI-based techniques.
 
 %-------------------------------------------------------------------------
 \section{Human Connectome Project}
 
-As a one of a result of the revolution in the non-invasive neuroimaging methods we are enable the analysis and the visualization of human brain structure, function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University, and the other led by MGH and UCLA. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy adults. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subject.
+As a one of a result of the revolution in the non-invasive neuroimaging methods we are able to analyze and visualize the human brains structure, its function and connectivity in unprecedented detail\cite{Essen:2013}. In 2010, NIH Neuroscience Blueprint Institutes and Centers awarded the Human Connectome Project (HCP) grants to two consortia, one led by Washington University, the University of Minnesota, and Oxford University, and the other led by MGH and UCLA. The aim of that ongoing project is to characterize human brain connectivity and function in a population of 1200 healthy adults. Acquired data should also enable comparison between brain circuit, behaviour, and genetics at the level of individual subjects.
 \\
-To achieve that aim, particular type of data was collected:
+To achieve that goal, a particular set of data was collected:
 \begin{itemize}
 	\item For all 1200 subjects:
 	\begin{itemize}
@@ -75,13 +73,13 @@ To achieve that aim, particular type of data was collected:
 		\item task fMRI (tfMRI)
 		\item diffusion MRI (dMRI)
 	\end{itemize}
-	It was done on a customized 3T scanner at Washington University, additionally 200 subject was also scanned an a 7 T scanner at the University of Minnesota.
+	It was done on a customized 3T scanner at Washington University, additionally 200 subject were also scanned an a 7 T scanner at the University of Minnesota.
 	\item A subset of 100 subject was studied using MEG/EEG (resting-state and task-evoked) carried out at St. Louis University.
-	\item Standardized behavioural tests was taken, to increase the prospects that finding based on the HCP data can in the feature be related to other large-scaled project comparing brain and behaviour.
-	\item Also blood samples was acquired at the time of each subject's visit. Genotyping will be carried out\cite{releaseNotes}.
+	\item Standardized behavioural tests were done, to increase the prospects that finding based on the HCP data can in the feature be related to other large-scaled project comparing brain and behaviour.
+	\item Also blood samples were acquired at the time of each subject's visit. Genotyping will be carried out\cite{releaseNotes}.
 \end{itemize}
 The project phase of acquiring data for visualization is already completed\cite{releaseNotes}.
-Data are freely available to the scientific community in the raw form, but also after the multiple levels of processing needed to analyse and interpret the data. Ta achieve aim of creating a database which could be use by vast community of researchers around the world the first phase of the project considered i. a. creation of: 3T scanning protocol and 7T scanning protocol (to acquire raw data), minimal processing pipelines, analysis approaches, informatics (one platforms for handling the data \textit{ConnectomeDB} and second for visualization and analysis \textit{Connectome Workbench}). Examples of images provided by this project we could see at figures  \ref{fig:connectome} and \ref{fig:connectome_rs}.
+Data is freely available to the scientific community in raw form, but also after multiple levels of processing needed to analyse and interpret the data. To archieve the aim of creating a database which could be used by the vast community of researchers around the world the first phase of the project considered i. a. creation of: 3T scanning protocol and 7T scanning protocol (to acquire raw data), minimal processing pipelines, analysis approaches, informatics (one platforms for handling the data \textit{ConnectomeDB} and a second for visualization and analysis \textit{Connectome Workbench}). Examples of images provided by this project we ca be seen in figure \ref{fig:connectome} and \ref{fig:connectome_rs}.
 
 \begin{figure}[htb]
   \centering
@@ -118,7 +116,7 @@ Data are freely available to the scientific community in the raw form, but also 
 %-------------------------------------------------------------------------
 
 \subsection{Data Processing}
-In order to make best use of the high-resolution HCP datasets, it is critical to compensate as much as possible distortions, biases, and artifacts and also to acknowledge the potential impact of residual confounds\cite{Essen:2013}. During the first two years of the HCP, intensive efforts were put into optimizing a set of preprocessing steps. Results provide improvement for all MRI modalities. For fMRI, one set of issues revolves around de-noising, and removal of motion confounds. Another involves brain parcellation and network analysis. For dMRI, key issues involve fiber orientation estimation followed by probabilistic tractography. In the next section we look closer to these which were applied to dMRI. Three mayor software packages used by the HCP pipelines are FSLNets, FreeSurfer, and Connectome Workbench. 
+In order to make the best use of the high-resolution HCP datasets, it is critical to compensate as much as possible for distortions, biases, and artifacts and also to acknowledge the potential impact of residual confounds\cite{Essen:2013}. During the first two years of the HCP, intensive efforts were put into optimizing a set of preprocessing steps. Results provide improvement for all MRI modalities. For fMRI, one set of issues revolves around de-noising, and removal of motion confounds. Another involves brain parcellation and network analysis. For dMRI, key issues involve fiber orientation estimation followed by probabilistic tractography. In the next section we look closer to these which were applied to dMRI. Three mayor software packages used by the HCP pipelines are FSLNets, FreeSurfer, and Connectome Workbench. 
 
 %-------------------------------------------------------------------------
 \subsection{Improvements for dMRI}
@@ -139,19 +137,72 @@ It was developed a model-based approach that simultaneously considers and correc
 \subsubsection{Fibre Orientation Estimation}
 Several methods have been proposed for inferring the fibre orientation density function (fODF) from diffusion MRI, targeting either the fODF directly or approximations of it. The underlying idea for the former group of methods is that the measured signal \textbf{S} can be considered as the spherical convolution of the fODF \textbf{F} and an impulse response function \textbf{R}. Then to estimate \textbf{F} we deal with deconvolution function.
 \\\
-The ball \& stick model is powerful parametric deconvolution method, but it is not appropriate for multi-shell datasets. Consequently, it was developed a parametric deconvolution extension of the ball \& stick model, which do not have this disadvantage. The single-fibre kernel \textbf{R} was modified to represent the signal arising from a distribution of diffusivities within a voxel, rather than a single diffusivity. Using a Gamma distribution of diffusivities allows an analytic parametric expression to be obtained. It is also a phenomenological model that can capture effects from multiple diffusion compartments and/or partial volume in a more flexible way than the simpler stick kernel. Thanks to this model crossing-fibre sensitivity was increased.
-\subsubsection{Tractography}
-Probabilistic streamline tractography is employed to propagate spatially the local fibre orientation information. Tractography algorithm has been modified to handle surfaces and volumes as regions of interest. Therefore, extra functionality is supported and handling of surface vertices, such as seeding from the grey/white matter boundary surface or using the pial surface as a termination mask.
-%-------------------------------------------------------------------------
+The ball \& stick model is a powerful parametric deconvolution method, but it is not appropriate for multi-shell datasets. Consequently, it was developed as a parametric deconvolution extension of the ball \& stick model, which do not have this disadvantage. The single-fibre kernel \textbf{R} was modified to represent the signal arising from a distribution of diffusivities within a voxel, rather than a single diffusivity. Using a Gamma distribution of diffusivities allows an analytic parametric expression to be obtained. It is also a phenomenological model that can capture effects from multiple diffusion compartments and/or partial volume in a more flexible way than the simpler stick kernel. Thanks to this model crossing-fibre sensitivity was increased.
 
+\subsubsection{Tractography}
+Tactography is a general term for methods of visualizing circuits that connect different parts of the brain structurally.
+Starting point is data that is gathered using diffusion weighted MRI, though this is not without problems.
+Significant inacuracies have been found in some cases when the dwi tactography was compared to a ground thruth \cite{maier2017challenge}.
+From there directional glyphs can be generated and further be converted to a series of tracts or channels.
+To visualize the channels many very fine lines or tubes have to be displayed which poses a challange for
+vertex based redering \cite{margulies2013visualizing}. Though through the abstraction of these channels to gpu accelerated tuboids (which are more like fine lines) the process could be significantly improved \cite{petrovic2007visualizing}
+The result is a representation of the structural nerve fibers inside the brain \ref{fig:connectome}. The possibility is there to color code the individual fibers depending on their direction, lighting and shadows can also be used to improve perception \ref{fig:connectome_prob}.
+
+\begin{figure}[htb]
+  \centering
+  % the following command controls the width of the embedded PS file
+  % (relative to the width of the current column)
+  \includegraphics[width=.8\linewidth]{connectome_prob}
+  % replacing the above command with the one below will explicitly set
+  % the bounding box of the PS figure to the rectangle (xl,yl),(xh,yh).
+  % It will also prevent LaTeX from reading the PS file to determine
+  % the bounding box (i.e., it will speed up the compilation process)
+  % \includegraphics[width=.95\linewidth, bb=39 696 126 756]{sampleFig}
+  %
+    \caption{\label{fig:connectome_prob}
+           Fibers are enhanced with shadows and lighting \cite{peeters2006visualization}.
+    }
+\end{figure}
+%-------------------------------------------------------------------------
+\subsubsection{Graph representation}
+For the visualization of functional and connectional data a different aproach is used where we take a more abstract route.
+There are also methods which involve the structural representation of the brain with the added connections, though this has the disadvantage that with an increasing number of connections the readability increases compared to a pure abstract graph.
+In \ref{fig:connectivity} the individual functional brain regions are fitted on a circle with a connection graph in the middle, additionally the regions are also color coded onto the physical brain structure for a better location understanding.
+
+\begin{figure}[htb]
+  \centering
+  % the following command controls the width of the embedded PS file
+  % (relative to the width of the current column)
+  \includegraphics[width=.8\linewidth]{connectivity}
+  % replacing the above command with the one below will explicitly set
+  % the bounding box of the PS figure to the rectangle (xl,yl),(xh,yh).
+  % It will also prevent LaTeX from reading the PS file to determine
+  % the bounding box (i.e., it will speed up the compilation process)
+  % \includegraphics[width=.95\linewidth, bb=39 696 126 756]{sampleFig}
+  %
+    \caption{\label{fig:connectivity}
+           Functional connectivity of the brain \cite{brainart}.
+    }
+\end{figure}
+
+\\
+\\
+\\
 \section{Responsibilities}
 
 M. Konefał worked on:
 \begin{itemize}
-\item Preparation of latex file,
-\item Abstract,
-\item Introduction,
-\item Human Connectome Project.
+\item Introduction
+\item Human Connectome Project
+\item Processing of the raw data
+\end{itemize}
+
+M. Wiedhalm worked on:
+\begin{itemize}
+\item Introduction
+\item Tractography
+\item Graph representation
+\item General additions
 \end{itemize}
 
 %-------------------------------------------------------------------------
